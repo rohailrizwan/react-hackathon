@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.user-input,.institute-input{
+  width: 100%;
+  border-radius: 27px;
+  padding: 10px 20px;
+  padding: 10px 15px !important;
+  outline: none;
+  border: none;
+  /* box-shadow: 1px 2px 9px blueviolet; */
+  border: 2px solid red;
+  color: blueviolet
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-dropdown {
+  padding: 10px 13px;
+  border: 2px solid red;
+  border-radius: 10px;
+  text-align: center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.user-form {
+  color: blueviolet;
+}
+.Login-image img{
+  height: 100vh;
+  width: 100%;
+}
+.institute-form,
+.Institute-List,
+.User-form,
+.Student-register {
+  margin: 30px 0px;
+  color: blueviolet;
+  font-family: ui-sans-serif;
+  letter-spacing: 4px;
+}
+
+.homebtn{
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.homebtn button{
+  background-color: blueviolet;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 205px;
+    height: 65px;
+}
+.home-navbar{
+  background-color: none;
+  color: white !important;
+}
+.Navbar{
+  background-color: white;
+  color: red;
+}
+.bg-color{
+  background-color: black;
+  opacity: 0.8;
+}
+.Signupdiv{
+  padding: 15px 70px !important;
+}
+.button-group{
+  height: 100vh;
+}
+.blood-dropdown{
+  padding: 10px;
+  color: blue;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.bg-image{
+  background-image: url('../src/images/bg-image.avif');
+  /* background-position:  center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width:767px){
+  .Logindiv{
+    padding: 20px !important;
+    width: 80% !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:630px){
+  .Logindiv{
+    padding: 20px !important;
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width:590px){
+  .Logindiv{
+    padding: 50px !important;
+    width: 80% !important;
   }
+  .Signupdiv{
+    width: 80% !important;
+    padding: 15px 30px !important;
+  }
+  .blood-dropdown{
+    width: 60%;
+  }
+  .Login-image img,.Signupdiv img{
+    display: none !important;
+  }
+  .bg-Login{
+    background-image: url('../src/images/login\ image.avif');
+    height: 100vh;
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width:380px){
+  .Logindiv{
+    padding: 50px 0px!important;
+    width: 100% !important;
+  }
+  .Signupdiv{
+    padding: 15px 0px !important;
+    width: 100% !important;
+  }
+
+}
+@media screen and (max-width:700px) {
+    .table-heading{
+      font-size: 12px !important;
+      padding: 12px !important;
+    }
 }
